@@ -3,7 +3,6 @@
 
 // but you don't so you're going to have to write it from scratch:
 var stringifyJSON = function (obj) {
-  //return obj;
 
 	var result;
 
@@ -30,10 +29,6 @@ var stringifyJSON = function (obj) {
 	  result = result + '}';
 	}
 	else if(typeof(obj) === "string"){			
-/*
-	  obj = obj.replace(/\\/g, '\\\\"');
-	  obj = obj.replace(/"/g, '\\\"');
-*/
 	  obj = obj.replace(/"/g, '\\\"');
 	  obj = obj.replace(/\\\\/g, '\\\\\\');
 	  result = '"' + obj + '"';
