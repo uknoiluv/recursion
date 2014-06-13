@@ -13,11 +13,7 @@ var getElementsByClassName = function (className) {
   
   var documentBody = document.body.children; 
   
-  console.log(documentBody);
-
   var elementLoop = function(elementList) {
- 
-    console.log(elementList);
 
       for(var i = 0; i < elementList.length; i++){  
         if(elementList[i].classList.contains(className)){        
@@ -28,6 +24,8 @@ var getElementsByClassName = function (className) {
   }
 
   elementLoop(documentBody);
+
+  console.log(result);
 
   return result;	
     
